@@ -5,6 +5,7 @@ import { data } from "./mock";
 import Slider from "react-slick";
 import leftArrow from '../../assets/icons/left-arrow-icon.svg'
 import rightArrow from '../../assets/icons/right-arrow-icon.svg'
+import dotedVector from '../../assets/doted-vector.png'
 
 const StockSlider = () => {
 
@@ -42,6 +43,7 @@ const StockSlider = () => {
   return (
     <section className="w-full relative" id="stock-slider">
       <img src={bottomVector} alt="" className="absolute -top-1 left-0" />
+      <img src={dotedVector} alt="" className="absolute top-0 left-0 w-[250px]"/>
       <div className="w-full max-w-[1440px] mx-auto px-4 lg:px-10 xl:px-20 relative pt-20 pb-14">
         <div className="flex flex-col items-center justify-center">
           <img src={mobileStockLogo} alt="" className="mb-5" />

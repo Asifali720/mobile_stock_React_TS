@@ -39,18 +39,110 @@
   }
 }
 
+.animate_text {
+  position: relative;
+  height: 10px; 
+  overflow: hidden;
+}
 
+.text-item {
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 10px;
+  transform: translateY(100%);
+  animation: textSwap 6s infinite;
+  opacity: 0;
+}
 
+.text-item:nth-child(1) {
+  animation-delay: 0s;
+}
+.text-item:nth-child(2) {
+  animation-delay: 2s;
+}
+.text-item:nth-child(3) {
+  animation-delay: 4s;
+}
 
-
-
-
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes textSwap {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  10%,
+  30% {
+    transform: translateY(0);
+    opacity: 1;
   }
-} */
+  40% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.hero_slider{
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    rotate: 90deg;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    top: 0;
+    right: -80px;
+
+    li {
+      width: fit-content !important;
+      height: fit-content !important;
+    }
+
+    button {
+      transition: 0.3s;
+      display: block;
+      width: 12px !important;
+      height: 12px !important;
+      padding: 0;
+      border: none;
+      border-radius: 100%;
+      background-color: #BED9F6 !important;
+      position: relative !important;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    li.slick-active button {
+      transition: 0.3s;
+      background: linear-gradient(90deg, #7CC140 0%, #388FCB 100%) !important;
+      border-radius: 5px;
+      width: 40px !important;
+      height: 12px;
+    }
+  }
+}
+
+
+.rotate_animation{
+  animation: rotate-animation 10s infinite linear;
+}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+

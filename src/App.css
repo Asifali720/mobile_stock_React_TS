@@ -1,0 +1,56 @@
+.stock_slider{
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    bottom: -40px;
+
+    li {
+      width: fit-content !important;
+      height: fit-content !important;
+    }
+
+    button {
+      transition: 0.3s;
+      display: block;
+      width: 12px !important;
+      height: 12px !important;
+      padding: 0;
+      border: none;
+      border-radius: 100%;
+      background-color: #BED9F6 !important;
+      position: relative !important;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    li.slick-active button {
+      transition: 0.3s;
+
+      background-color: #7CC140 !important;
+      border-radius: 5px;
+      width: 40px !important;
+      height: 12px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

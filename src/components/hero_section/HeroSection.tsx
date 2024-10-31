@@ -137,13 +137,13 @@ const HeroSection = () => {
           <div className="relative">
             <Slider {...settings} className="hero_slider">
               {array.map((item) => (
-                <div className=" !pl-[35%] ">
+                <div className=" !pl-[30%] md:!pl-[35%]">
                   <img src={item} alt="" className="w-[280px] relative" />
                 </div>
               ))}
             </Slider>
 
-            <div className="absolute top-[20%] left-[25%]  w-[450px] -z-10 opacity-50">
+            <div className="absolute top-[20%] left-[20%] md:left-[25%]  w-[450px] -z-10 opacity-50">
               <img
                 src={vector}
                 alt=""

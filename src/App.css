@@ -144,5 +144,27 @@
 	}
 }
 
+.rotation-animation{
+  animation: rotation  3s;
+  animation-iteration-count: infinite;
+  transition: ease-in-out;
+}
 
+
+@keyframes rotation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.menu_height{
+  height: calc(100vh - 100px);
+}
 

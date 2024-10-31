@@ -7,7 +7,7 @@ const ShowCaseSlider = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 20,
+    slidesToShow: 15,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
@@ -17,18 +17,10 @@ const ShowCaseSlider = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 12,
+          slidesToShow: 10,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 7,
-          slidesToScroll: 2,
-          initialSlide: 2,
         },
       },
       {
